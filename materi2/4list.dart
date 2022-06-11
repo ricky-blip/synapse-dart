@@ -15,7 +15,7 @@ void main() {
   mahasiswa2.add('Deddy');
   print(mahasiswa2);
 
-  List mahasiswa3 = ['Andra','Bobby','Ikhwan'];
+  List mahasiswa3 = ['Andra','Bobby','Ikhwan','Adi'];
   mahasiswa2.addAll(mahasiswa3);
   print(mahasiswa2);
 
