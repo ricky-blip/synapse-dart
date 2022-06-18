@@ -22,15 +22,14 @@ void main(List<String> args) {
   } while (x <= nilai);
 
   print("===== [List] dengan WhileLooping =====");
-  List daftarMakanan = ["Sate","Nasi Goreng", "Bakso"];
+  List daftarBrand = ["Motorola","Nokia", "Samsung", "Apple"];
 
   int index = 0;
   do {
-    print("Index : " + index.toString());
-    print(daftarMakanan[index]);
+    print("Index ${index} : ${daftarBrand[index]}");
 
     index++; // increment
-  } while (index < daftarMakanan.length);
+  } while (index < daftarBrand.length);
 
 
 

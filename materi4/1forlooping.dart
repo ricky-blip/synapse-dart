@@ -32,4 +32,10 @@ void main() {
     print(daftarMakanan[index]);
   }
 
+  print("===========Perkalian 7============="); 
+  for (int i = 1; i <= 20; i++) {
+    int perkalian = i * 7;
+    print("Perkalian ${i} x 7 = ${perkalian}");
+  }
+
 }
