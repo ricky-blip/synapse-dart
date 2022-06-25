@@ -30,10 +30,8 @@ class Becak extends Kendaraan {
     super.jumlahRoda(roda);
   }
 
-  void klakson() {
-    print("Klakson Becak : ${klakson} ");
-    super.klakson();
-  }
+
+  
 
 }
 
