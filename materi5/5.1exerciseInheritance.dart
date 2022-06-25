@@ -1,11 +1,11 @@
 // Class Parent
 class Kendaraan {
   // atribut/ field
-  String suaraKlason = "Tiinnn";
+  String suaraKlakson = "Tiinnn";
 
   // method = Function
   void klakson() {
-    print(suaraKlason);
+    print(suaraKlakson);
   }
 
   void jumlahRoda(int roda) {
@@ -15,26 +15,30 @@ class Kendaraan {
 }
 
 // Class Child
-class Becak extends Kendaraan {
-  // atribut/field
+class Truk extends Kendaraan {
   int? roda;
 
-  // construtor
-  Becak({
+  Truk ({
     this.roda = 0
   });
 
   @override
-  void jumlahRoda(int roda) {
-    print("Roda becak : ${roda} ");
-    super.jumlahRoda(roda);
+  void klakson() {
+    print("Telolett");
+    super.klakson();
+
   }
 
 }
 
 void main() {
-  Becak bmw = Becak();
-  bmw.jumlahRoda(3);
-  bmw.klakson();
+  Truk volvo = Truk();
+  Truk quester = Truk(roda : 12);
+
+  volvo.klakson();
+  volvo.jumlahRoda(14);
+
+  quester.klakson();
+  quester.jumlahRoda(12);
 
 }

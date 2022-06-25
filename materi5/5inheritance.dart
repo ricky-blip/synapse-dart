@@ -23,15 +23,15 @@ class Mobil extends Kendaraan {
     this.roda = 0
   });
 
+  // SECTION Override
   // @override => mereplace isi function / method yang ada di class induk menjadi sesuai yg kita inginkan
   @override
   void jumlahRoda(int roda) {
-    print("Rodanya : ${roda} ");
-    super.jumlahRoda(roda); // harus menggunakan keyword SUPER, lalu apa yg mau di ganti/replace
+    print("Mobil roda ${roda} ");
+    // super.jumlahRoda(roda); // harus menggunakan keyword SUPER, lalu apa yg mau di ganti/replace
   }
 }
 
-// SECTION Override
 
 void main() {
   
@@ -44,6 +44,5 @@ void main() {
 
   // isi roda nilainya dapat dari contructor
   hrr.jumlahRoda(16);
-  
 
 }
