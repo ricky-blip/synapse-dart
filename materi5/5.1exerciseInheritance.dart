@@ -30,14 +30,11 @@ class Becak extends Kendaraan {
     super.jumlahRoda(roda);
   }
 
-
-  
-
 }
 
 void main() {
   Becak bmw = Becak();
   bmw.jumlahRoda(3);
-  bmw.suaraKlason;
+  bmw.klakson();
 
 }
