@@ -16,7 +16,7 @@ class Kendaraan {
 
 // Class Child
 class Truk extends Kendaraan {
-  int? roda;
+  int roda;
 
   Truk ({
     this.roda = 0
@@ -24,6 +24,7 @@ class Truk extends Kendaraan {
 
   @override
   void klakson() {
+
     print("Telolett");
     super.klakson();
 
@@ -33,12 +34,12 @@ class Truk extends Kendaraan {
 
 void main() {
   Truk volvo = Truk();
-  Truk quester = Truk(roda : 12);
+  Truk quester = Truk(roda : 20);
 
   volvo.klakson();
   volvo.jumlahRoda(14);
 
   quester.klakson();
-  quester.jumlahRoda(12);
+  quester.jumlahRoda(quester.roda);
 
 }

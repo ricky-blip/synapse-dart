@@ -28,8 +28,10 @@ class Mobil extends Kendaraan {
   @override
   void jumlahRoda(int roda) {
     print("Mobil roda ${roda} ");
-    // super.jumlahRoda(roda); // harus menggunakan keyword SUPER, lalu apa yg mau di ganti/replace
+    super.jumlahRoda(roda); // harus menggunakan keyword SUPER, lalu apa yg mau di ganti/replace
   }
+
+  
 }
 
 
