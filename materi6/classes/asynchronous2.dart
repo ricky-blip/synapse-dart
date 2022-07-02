@@ -1,6 +1,7 @@
 import 'dart:async';
 
 class AsynchronousDua {
+  
   Future<void> fetchData() {
     return Future.delayed(Duration(seconds:2), () => print("Fetch Data Finished"));
   }
@@ -8,6 +9,7 @@ class AsynchronousDua {
   void dataLoading() {
     print("Data Loading...");
   }
+
 }
 
 void main() {
