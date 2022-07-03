@@ -1,7 +1,7 @@
 class Greeting {
 
   Future<String> fetchData() { 
-    return Future.delayed(Duration(seconds: 2), () => throw("Error Message") );
+    return Future.delayed(Duration(seconds: 2), () => throw("Error Message ...") );
   }
 
   Future<String> printData() async {
